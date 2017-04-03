@@ -3,9 +3,6 @@ package com.cgreger.halloweenmultithread;
 
 import org.apache.log4j.Logger;
 
-/**
- * Created by katana on 4/1/17.
- */
 public class Child implements Runnable {
 
     private final Logger log = Logger.getLogger(this.getClass());
@@ -25,6 +22,7 @@ public class Child implements Runnable {
 
     private synchronized void goTrickOrTreating() {
 
+        // Try to get candy!
         halloween.addChildAtDoor(this);
 
     }

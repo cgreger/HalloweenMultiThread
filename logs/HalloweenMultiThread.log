@@ -2585,3 +2585,111 @@
 2017-04-03 18:07:36,820 57041 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 16 leaves with candy
 2017-04-03 18:07:36,820 57041 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Trick or Treating has stopped.
 2017-04-03 18:07:36,820 57041 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Trick or Treating lasted 57 seconds
+2017-04-03 18:21:50,603 0    [main] INFO  com.cgreger.halloweenmultithread.Halloween  - Trick or Treating has begun
+2017-04-03 18:21:50,605 2    [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley is watching TV
+2017-04-03 18:21:50,606 3    [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 1 generated
+2017-04-03 18:21:50,606 3    [Thread-2] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 1 rings doorbell
+2017-04-03 18:21:50,607 4    [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley answers the door
+2017-04-03 18:21:50,607 4    [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 1
+2017-04-03 18:21:51,607 1004 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 2 generated
+2017-04-03 18:21:52,607 2004 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 3 generated
+2017-04-03 18:21:53,607 3004 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 1 leaves with candy
+2017-04-03 18:21:53,608 3005 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley is watching TV
+2017-04-03 18:21:53,608 3005 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 4 generated
+2017-04-03 18:21:53,609 3006 [Thread-4] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 3 rings doorbell
+2017-04-03 18:21:53,609 3006 [Thread-3] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 2 rings doorbell
+2017-04-03 18:21:53,609 3006 [Thread-5] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 4 rings doorbell
+2017-04-03 18:21:53,610 3007 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley answers the door
+2017-04-03 18:21:53,610 3007 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 3
+2017-04-03 18:21:54,609 4006 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 5 generated
+2017-04-03 18:21:55,610 5007 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 6 generated
+2017-04-03 18:21:56,610 6007 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 3 leaves with candy
+2017-04-03 18:21:56,611 6008 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 7 generated
+2017-04-03 18:21:56,611 6008 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 2
+2017-04-03 18:21:57,612 7009 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 8 generated
+2017-04-03 18:21:58,614 8011 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 9 generated
+2017-04-03 18:21:59,612 9009 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 2 leaves with candy
+2017-04-03 18:21:59,613 9010 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 4
+2017-04-03 18:21:59,616 9013 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 10 generated
+2017-04-03 18:22:00,617 10014 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 11 generated
+2017-04-03 18:22:01,618 11015 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 12 generated
+2017-04-03 18:22:02,613 12010 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 4 leaves with candy
+2017-04-03 18:22:02,614 12011 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley is watching TV
+2017-04-03 18:22:02,614 12011 [Thread-13] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 12 rings doorbell
+2017-04-03 18:22:02,615 12012 [Thread-12] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 11 rings doorbell
+2017-04-03 18:22:02,615 12012 [Thread-11] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 10 rings doorbell
+2017-04-03 18:22:02,616 12013 [Thread-10] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 9 rings doorbell
+2017-04-03 18:22:02,616 12013 [Thread-9] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 8 rings doorbell
+2017-04-03 18:22:02,617 12014 [Thread-8] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 7 rings doorbell
+2017-04-03 18:22:02,618 12015 [Thread-7] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 6 rings doorbell
+2017-04-03 18:22:02,619 12016 [Thread-6] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 5 rings doorbell
+2017-04-03 18:22:02,619 12016 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 13 generated
+2017-04-03 18:22:02,620 12017 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley answers the door
+2017-04-03 18:22:02,620 12017 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 12
+2017-04-03 18:22:03,620 13017 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 14 generated
+2017-04-03 18:22:04,621 14018 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 15 generated
+2017-04-03 18:22:05,620 15017 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 12 leaves with candy
+2017-04-03 18:22:05,621 15018 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 11
+2017-04-03 18:22:05,622 15019 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 16 generated
+2017-04-03 18:22:06,623 16020 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 17 generated
+2017-04-03 18:22:07,624 17021 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 18 generated
+2017-04-03 18:22:08,621 18018 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 11 leaves with candy
+2017-04-03 18:22:08,622 18019 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 10
+2017-04-03 18:22:08,625 18022 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 19 generated
+2017-04-03 18:22:09,626 19023 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 20 generated
+2017-04-03 18:22:10,626 20023 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 21 generated
+2017-04-03 18:22:11,622 21019 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 10 leaves with candy
+2017-04-03 18:22:11,622 21019 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 9
+2017-04-03 18:22:11,627 21024 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 22 generated
+2017-04-03 18:22:12,628 22025 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 23 generated
+2017-04-03 18:22:13,629 23026 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 24 generated
+2017-04-03 18:22:14,623 24020 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 9 leaves with candy
+2017-04-03 18:22:14,623 24020 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 8
+2017-04-03 18:22:14,630 24027 [Thread-1] INFO  com.cgreger.halloweenmultithread.ChildGenerator  - Child 25 generated
+2017-04-03 18:22:17,623 27020 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 8 leaves with candy
+2017-04-03 18:22:17,624 27021 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 7
+2017-04-03 18:22:20,624 30021 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 7 leaves with candy
+2017-04-03 18:22:20,625 30022 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 6
+2017-04-03 18:22:23,626 33023 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 6 leaves with candy
+2017-04-03 18:22:23,626 33023 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 5
+2017-04-03 18:22:26,626 36023 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 5 leaves with candy
+2017-04-03 18:22:26,627 36024 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley is watching TV
+2017-04-03 18:22:26,627 36024 [Thread-26] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 25 rings doorbell
+2017-04-03 18:22:26,630 36027 [Thread-25] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 24 rings doorbell
+2017-04-03 18:22:26,631 36028 [Thread-24] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 23 rings doorbell
+2017-04-03 18:22:26,631 36028 [Thread-23] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 22 rings doorbell
+2017-04-03 18:22:26,632 36029 [Thread-22] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 21 rings doorbell
+2017-04-03 18:22:26,634 36031 [Thread-21] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 20 rings doorbell
+2017-04-03 18:22:26,635 36032 [Thread-20] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 19 rings doorbell
+2017-04-03 18:22:26,635 36032 [Thread-19] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 18 rings doorbell
+2017-04-03 18:22:26,640 36037 [Thread-18] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 17 rings doorbell
+2017-04-03 18:22:26,640 36037 [Thread-17] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 16 rings doorbell
+2017-04-03 18:22:26,641 36038 [Thread-16] INFO  com.cgreger.halloweenmultithread.Halloween  - Too many children at the door
+2017-04-03 18:22:26,641 36038 [Thread-16] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 15 passes by
+2017-04-03 18:22:26,643 36040 [Thread-15] INFO  com.cgreger.halloweenmultithread.Halloween  - Too many children at the door
+2017-04-03 18:22:26,643 36040 [Thread-15] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 14 passes by
+2017-04-03 18:22:26,644 36041 [Thread-14] INFO  com.cgreger.halloweenmultithread.Halloween  - Too many children at the door
+2017-04-03 18:22:26,644 36041 [Thread-14] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 13 passes by
+2017-04-03 18:22:26,644 36041 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley answers the door
+2017-04-03 18:22:26,644 36041 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 25
+2017-04-03 18:22:29,645 39042 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 25 leaves with candy
+2017-04-03 18:22:29,645 39042 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 24
+2017-04-03 18:22:32,645 42042 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 24 leaves with candy
+2017-04-03 18:22:32,646 42043 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 23
+2017-04-03 18:22:35,646 45043 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 23 leaves with candy
+2017-04-03 18:22:35,646 45043 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 22
+2017-04-03 18:22:38,647 48044 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 22 leaves with candy
+2017-04-03 18:22:38,647 48044 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 21
+2017-04-03 18:22:41,648 51045 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 21 leaves with candy
+2017-04-03 18:22:41,648 51045 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 20
+2017-04-03 18:22:44,648 54045 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 20 leaves with candy
+2017-04-03 18:22:44,649 54046 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 19
+2017-04-03 18:22:47,649 57046 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 19 leaves with candy
+2017-04-03 18:22:47,649 57046 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 18
+2017-04-03 18:22:50,650 60047 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 18 leaves with candy
+2017-04-03 18:22:50,650 60047 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 17
+2017-04-03 18:22:53,650 63047 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 17 leaves with candy
+2017-04-03 18:22:53,651 63048 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Riley hands out candy to child 16
+2017-04-03 18:22:56,651 66048 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Child 16 leaves with candy
+2017-04-03 18:22:56,652 66049 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Trick or Treating has stopped.
+2017-04-03 18:22:56,652 66049 [Thread-0] INFO  com.cgreger.halloweenmultithread.Halloween  - Trick or Treating lasted 66 seconds
