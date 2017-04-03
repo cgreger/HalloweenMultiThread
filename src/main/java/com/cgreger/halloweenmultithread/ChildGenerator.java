@@ -3,9 +3,8 @@ package com.cgreger.halloweenmultithread;
 
 import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
 
 /**
  * Created by katana on 4/1/17.
@@ -14,6 +13,7 @@ public class ChildGenerator implements Runnable {
 
     private final Logger log = Logger.getLogger(this.getClass());
     private Halloween halloween;
+    private static final int NUM_CHILDREN_TO_GENERATE = 25;
 
     public ChildGenerator(Halloween halloween) {
 
@@ -30,18 +30,26 @@ public class ChildGenerator implements Runnable {
     public void generateChildren() {
 
         //Generate a 20 children
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < NUM_CHILDREN_TO_GENERATE; i++) {
 
             generateChild(i + 1);
 
-            //Wait one second before next child is generated
             try {
 
                 Thread.sleep(1000);
 
-            } catch (InterruptedException e) {
+            }  catch(InterruptedException iex) {
 
-                e.printStackTrace();
+                iex.printStackTrace();
+
+            }
+
+        }
+        synchronized (halloween.getChildrenAtDoor()) {
+
+            if (halloween.getChildrenAtDoor().size() == 0) {
+
+                halloween.setContinueHalloween(false);
 
             }
 
@@ -55,15 +63,6 @@ public class ChildGenerator implements Runnable {
         Thread childThread = new Thread(child);
         log.info("Child " + id + " generated");
         childThread.start();
-
-        try
-        {
-            TimeUnit.SECONDS.sleep((long)(Math.random()*10));
-        }
-        catch(InterruptedException iex)
-        {
-            iex.printStackTrace();
-        }
 
     }
 

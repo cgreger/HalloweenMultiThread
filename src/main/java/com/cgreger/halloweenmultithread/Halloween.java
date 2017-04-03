@@ -17,8 +17,9 @@ public class Halloween {
     private long durration;
     private static final int MAX_CHILDREN_AT_DOOR = 10;
     private List<Child> childrenAtDoor;
-    //private Riley riley;
-    //private ChildGenerator gen;
+    private boolean continueHalloween = true;
+    private Thread rileyThread;
+    private Thread genThread;
 
 
     public Halloween() {
@@ -36,8 +37,8 @@ public class Halloween {
         ChildGenerator gen = new ChildGenerator(this);
 
 
-        Thread rileyThread = new Thread(riley);
-        Thread genThread = new Thread(gen);
+        rileyThread = new Thread(riley);
+        genThread = new Thread(gen);
 
         rileyThread.start();
         genThread.start();
@@ -59,7 +60,7 @@ public class Halloween {
 
         synchronized (childrenAtDoor) {
 
-            while (childrenAtDoor.size() == 0) {
+            while (childrenAtDoor.size() == 0 && continueHalloween) {
 
                 log.info("Riley is watching TV");
 
@@ -75,8 +76,6 @@ public class Halloween {
 
             }
 
-            long duration = 0;
-
             log.info("Riley answers the door");
 
             List<Child> toRemove = new ArrayList<Child>();
@@ -84,11 +83,10 @@ public class Halloween {
             for (Child child : childrenAtDoor) {
 
                 log.info("Riley hands out candy to child " + child.getId());
-                duration = (long)(Math.random() * 10);
 
                 try {
 
-                    TimeUnit.SECONDS.sleep(duration);
+                    rileyThread.sleep(3000);
 
                 } catch (InterruptedException e) {
 
@@ -98,12 +96,6 @@ public class Halloween {
 
                 log.info("Child " + child.getId() + " leaves with candy");
                 toRemove.add(child);
-
-                if (child.getId() == 20) {
-
-                    stopTrickOrTreating();
-
-                }
 
             }
 
@@ -116,7 +108,7 @@ public class Halloween {
     public void stopTrickOrTreating() {
 
         stopTime = System.currentTimeMillis();
-        durration = (startTime - stopTime) / 1000;
+        durration = (stopTime - startTime) / 1000;
         log.info("Trick or Treating has stopped.");
         log.info("Trick or Treating lasted " + durration + " seconds");
 
@@ -148,5 +140,22 @@ public class Halloween {
 
     }
 
+    public void setContinueHalloween(boolean continueHalloween) {
+
+        this.continueHalloween = continueHalloween;
+
+    }
+
+    public boolean getContinueHalloween() {
+
+        return continueHalloween;
+
+    }
+
+    public List<Child> getChildrenAtDoor() {
+
+        return childrenAtDoor;
+
+    }
 
 }

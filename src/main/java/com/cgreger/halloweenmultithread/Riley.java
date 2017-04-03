@@ -27,11 +27,13 @@ public class Riley implements Runnable {
 
     public void watchTV() {
 
-        while (true) {
+        while (halloween.getContinueHalloween()) {
 
             halloween.startTrickOrTreating();
 
         }
+
+        halloween.stopTrickOrTreating();
 
     }
 
